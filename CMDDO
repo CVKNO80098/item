@@ -1,0 +1,1 @@
+for /l %p in (1,1,150) do @ping -l 1 -n 1 -w 40 192.168.1.%p & if errorlevel 1 (echo 192.168.1.%p>>na.txt) else (echo 192.168.1.%p>>"E:\ok.txt")
